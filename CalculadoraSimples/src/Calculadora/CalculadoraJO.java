@@ -20,10 +20,10 @@ public class CalculadoraJO
 		double calculo;
 		calculo = Double.parseDouble(operacao); //Conversão de String pra inteiro
 		
-		entrada1 = JOptionPane.showInputDialog("Digite o primeiro valor para a operação: ");
+		entrada1 = JOptionPane.showInputDialog("Digite o primeiro valor para a operação: ".replace(",", "."));
 		valor1 = Double.parseDouble(entrada1.replace(",", ".")); 
 		
-		entrada2 = JOptionPane.showInputDialog("Digite o segundo valor para a operação: ");
+		entrada2 = JOptionPane.showInputDialog("Digite o segundo valor para a operação: ".replace(",", "."));
 		valor2 = Double.parseDouble(entrada2.replace(",", "."));
 		
 		if(calculo == 1) 
